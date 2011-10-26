@@ -1,0 +1,18 @@
+=border-radius($radius: 1em, $side: false)
+  @if $side != false
+    border-#{$side}-radius: $radius
+    -moz-border-radius-#{$side}: $radius
+    -webkit-border-#{$side}-radius: $radius
+  @else
+    -moz-border-radius: $radius
+    -webkit-border-radius: $radius
+    border-radius: $radius
+
+p.a
+  +border-radius
+
+p.b
+  +border-radius(2em)
+
+p.c
+  +border-radius(2em 2em)

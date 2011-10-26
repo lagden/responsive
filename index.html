@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Media Queries</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/device.css">
+    <link rel="stylesheet" href="static/form.css">
+    <link rel="stylesheet" href="static/icon.css">
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/responsive.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function()
+        {
+            $('img').responsive();
+        });
+    </script>
+    
+    <!--[if lt IE 9]>
+    <script src="/static/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <hgroup>
+                <h1><a href="/">Media Queries</a></h1>
+                <h2>Exemplos de como usar e fazer</h2>
+            </hgroup>
+        </header>
+    </div>
+    
+    <div id="content" class="wrapper">
+        <img class="capa" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw=="
+             data-400="assets/image400.jpg"
+             data-500="assets/image500.jpg"
+             data-600="assets/image600.jpg"
+             data-700="assets/image700.jpg"
+             data-800="assets/image800.jpg"
+             data-default="assets/image.jpg"
+        alt="image">
+        
+        <article id="lcs" class="site">
+            <h3>
+                <a href="/lcs/">Lancaster University</a>
+            </h3>
+            <p class="like icon">
+                <a href="#auth">7</a>
+            </p>
+        
+            <div class="shots">
+                <a href="http://www.lancs.ac.uk/">
+                    <img class="smartphone" src="/static/shots/lcs.smartphone.thumb.png">
+                </a>
+                <a href="http://www.lancs.ac.uk/">
+                    <img class="tablet" src="/static/shots/lcs.tablet.thumb.png">
+                </a>
+                <a href="http://www.lancs.ac.uk/">
+                    <img class="netbook" src="/static/shots/lcs.netbook.thumb.png">
+                </a>
+                <a href="http://www.lancs.ac.uk/">
+                    <img class="desktop" src="/static/shots/lcs.desktop.thumb.png">
+                </a>
+            </div>
+        </article>
+    
+        <p id=pagination>
+            <strong>1</strong>
+            <a href="/2/">2</a>
+            <a href="/3/">3</a>
+            <span class=seperator>&hellip;</span>
+            <a href="/25/">25</a>
+            <a href="/26/">26</a>
+            <a href="/2/">Next &raquo;</a>
+            <a class="orderby" href="/popular/">Order by popularity</a>
+        </p>
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <nav>
+                <a href="/submit/">Submit</a>
+                <a href="/leaderboard/">Leaderboard</a>
+                <a href="/about/">About</a>
+                <div class="secondary">
+                    <a href="http://twitter.com/mediaqueries">@mediaqueries</a>
+                    <a href="mailto:hello@mediaqueri.es">hello@mediaqueri.es</a>
+                </div>
+            </nav>
+
+            <div class="meta">
+                <p id="tags">
+                    Browse by tags:
+                    <a  href="/tag/media-queries/"  style="color: rgba(204, 0, 0, 1.0);">media queries</a>,
+                    <a  href="/tag/flexible-images/"  style="color: rgba(204, 0, 0, 0.7);">flexible images</a>,
+                    <a  href="/tag/fluid-grids/"  style="color: rgba(204, 0, 0, 0.7);">fluid grids</a>,
+                    <a  href="/tag/responsive-web-design/"  style="color: rgba(204, 0, 0, 0.6);">responsive web design</a>,
+                    <a  href="/tag/fixed-grids/"  style="color: rgba(204, 0, 0, 0.5);">fixed grids</a>
+                    and
+                    <a  href="/tag/mobile-first/"  style="color: rgba(204, 0, 0, 0.5);">mobile first</a>.
+                    <br>
+                    View <a href="/tag/">tag frequency</a>.
+                </p>
+                
+                <p id="auth">
+                    A Twitter account is needed to submit sites
+                    and vote for the sites you like.
+                    <a href="/login/" class="sign-in-with-twitter">Sign in with Twitter</a>
+                </p>
+
+                <p id="feed" class="icon">
+                    <a href="/.atom">
+                        Subscribe to a feed of the latest highlighted sites using
+                        media queries.
+                    </a>
+                </p>
+
+                <p id="copy">
+                    Curated by
+                    <a href="http://uggedal.com">Eivind Uggedal</a>
+                    (<a href="http://twitter.com/uggedal">@uggedal</a>).
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

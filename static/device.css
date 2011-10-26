@@ -1,0 +1,169 @@
+/* Base 16px */
+
+/* 30em = 480px */
+@media screen and (min-width: 30em) {
+    h1 {
+        font-size: 3.25em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    p#pagination {
+        overflow: hidden;
+    }
+
+    p#pagination .orderby {
+        float: right;
+    }
+
+    img[data-src-400] {
+        content: attr(data-src-400, url);
+    }
+
+}
+
+/* 33em = 528px */
+@media screen and (min-width: 33em) {
+
+    input {
+        width: 30em;
+    }
+
+    img[data-src-500] {
+        content: attr(data-src-500, url);
+    }
+
+}
+
+/* 40em = 640px */
+@media screen and (min-width: 40em) {
+
+
+    footer .wrapper {
+        overflow: auto;
+    }
+
+    nav,
+    footer .meta {
+        float: left;
+    }
+
+    nav {
+        margin-right: 3.125%;
+        width: 29.6875%;
+    }
+
+    nav a {
+        background: #1c1c1c;
+        color: #ccc;
+        font-size: 1.5em;
+        margin: 0 0 .5em 0;
+        text-align: left;
+        text-transform: none;
+    }
+
+    nav a:hover {
+        background: #c00;
+        color: #fff;
+    }
+
+    nav .secondary a {
+        font-size: 1.25em;
+    }
+
+    footer .meta {
+        width: 67.1875%;
+    }
+    
+    img[data-src-600] {
+        content: attr(data-src-600, url);
+    }
+}
+
+/* 48em = 768px */
+@media screen and (min-width: 48em) {
+
+    .wrapper {
+        padding: 0 1.5em;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    article h3,
+    article p.info {
+        font-size: 2em;
+    }
+
+    article .like {
+        font-size: 1em;
+    }
+
+    ul.messages li {
+        font-size: 1.25em;
+    }
+
+    #leaders {
+        overflow: hidden;
+    }
+
+    #leaders article {
+        float: left;
+        width: 47.5%;
+    }
+
+    #creators {
+        margin-right: 2.5%;
+    }
+
+    #suggesters {
+        margin-left: 2.5%;
+    }
+
+    #about p,
+    #about dl,
+    #tag-usage dl {
+        font-size: 1.25em;
+    }
+    
+    img[data-src-700] {
+        content: attr(data-src-700, url);
+    }
+
+}
+
+/* 56em = 896px */
+@media screen and (min-width: 56em) {
+
+    footer .meta {
+        position: relative;
+    }
+
+    footer .meta p {
+        margin-left: 41.8605%;
+        width: 58.1395%;
+    }
+
+    footer .meta p:nth-child(2) {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    #tags {
+        position: absolute;
+        margin-left: 0;
+        width: 37.2105%;
+    }
+    
+    img[data-src-800] {
+        content: attr(data-src-800, url);
+    }
+
+}

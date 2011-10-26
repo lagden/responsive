@@ -1,0 +1,347 @@
+
+@font-face{ 
+  font-family: "OFL Sorts Mill Goudy";
+  font-style: normal;
+  font-weight: normal;
+  src: url('oflgoudystmtt-webfont.eot');
+}
+
+@font-face {
+  font-family: "OFL Sorts Mill Goudy";
+  font-style: normal;
+  font-weight: normal;
+  src: url(http://:/) format("No-IE-404"), url('oflgoudystmtt-webfont.woff') format('woff'), url('oflgoudystmtt-webfont.ttf') format('truetype'), url('oflgoudystmtt-webfont.svg#webfontHB4987y4') format('svg');
+}
+
+
+input,
+button,
+body {
+  color: #333;
+  font: 100%/1.5 Georgia, serif;
+}
+
+a {
+  color: #c00;
+  text-decoration: none;
+}
+
+  a:hover {
+    color: #333;
+  }
+
+dl {
+  overflow: hidden;
+}
+
+  dl dt {
+    font-style: italic;
+  }
+
+  dl dd {
+    margin-left: 1em;
+  }
+
+p,
+dl,
+form {
+  margin-bottom: 1em;
+}
+
+img.capa{width:100%;}
+
+header {
+  margin: 1em 0;
+}
+
+  h1,
+  h2,
+  h3,
+  nav,
+  p.info {
+    font-family: "OFL Sorts Mill Goudy",
+                 "Palatino",
+                 "Georgia",
+                 serif;
+    font-weight: normal;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+
+    h1 a {
+      color: #333;
+    }
+
+      h1 a:hover {
+        color: #c00;
+      }
+
+  h2 {
+    font-size: 1em;
+  }
+
+    h2 .byline-tag {
+      color: #c00;
+    }
+
+.wrapper {
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+  article {
+    margin-bottom: 1em;
+    position: relative;
+  }
+
+    article h3,
+    article p.info {
+      font-size: 1.5em;
+    }
+
+    article h3 {
+      margin-bottom: .25em;
+    }
+
+      article.site h3 {
+        padding-right: 2.5em;
+      }
+
+      article h3 a {
+        color: #333;
+      }
+
+        article h3 a:hover {
+          color: #c00;
+        }
+
+      article .like {
+        position: absolute;
+        right: 0;
+        top: .9em;
+      }
+
+    article .shots {
+    }
+
+      article .shots:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+      }
+
+      article .shots img {
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+        float: left;
+        margin-bottom: 1em;
+        margin-right: 3.125%;
+      }
+
+        article .shots .smartphone {
+          max-width: 5em;
+          width: 7.8125%;
+        }
+
+        article .shots .tablet {
+          max-width: 12em;
+          width: 18.75%;
+        }
+
+        article .shots .netbook {
+          max-width: 16em;
+          width: 25%;
+        }
+
+        article .shots .desktop {
+          margin-right: 0;
+          max-width: 25em;
+          width: 39.0625%;
+        }
+
+        article .shots a:hover img {
+          opacity: 0.8;
+        }
+
+  #leaders {
+  }
+
+    #leaders article dl dd a {
+      color: #333;
+    }
+
+      #leaders article dl dd a:hover {
+        color: #c00;
+      }
+
+  #tag-usage {
+  }
+
+    #tag-usage dl dd.percentage {
+      background: rgba(0, 0, 0, .05);
+      margin-bottom: 1em;
+      margin-top: .5em;
+    }
+
+      #tag-usage dl dd.percentage .bar {
+        display: block;
+      }
+
+        #tag-usage dl dd.percentage .bar .value {
+          background: #c00;;
+          color: #fff;
+          display: block;
+          padding: .25em 0;
+          text-align: center;
+          -webkit-animation: tag-bar 500ms ease-out;
+          -moz-animation: tag-bar 500ms ease-out;
+          animation: tag-bar 500ms ease-out;
+        }
+
+          @-webkit-keyframes tag-bar {
+            from {
+              width: 0%;
+            }
+            to {
+              width: 100%;
+            }
+          }
+
+          @-moz-keyframes tag-bar {
+            from {
+              width: 0%;
+            }
+            to {
+              width: 100%;
+            }
+          }
+
+          @keyframes tag-bar {
+            from {
+              width: 0%;
+            }
+            to {
+              width: 100%;
+            }
+          }
+
+.ro {
+  color: #c00;
+  font-size: 1.5em;
+}
+
+.wrapper #submit,
+.wrapper #about,
+.wrapper #leaders,
+.wrapper #tag-usage,
+.wrapper #error,
+.wrapper p#pagination {
+  margin-bottom: 2em;
+}
+
+p#pagination strong {
+  font-weight: normal;
+}
+
+p#pagination .orderby {
+  display: block;
+}
+
+footer {
+  background: #111;
+  border-top: 1px solid #ccc;
+  -moz-box-shadow: 0 4em 3em 4em #111;
+  -webkit-box-shadow: 0 4em 3em 4em #111;
+  box-shadow: 0 0 2.5em .1em #555;
+  color: #ccc;
+  padding: 3em 0;
+}
+
+  footer .wrapper {
+  }
+
+    footer .wrapper p {
+    }
+
+    nav {
+      margin-bottom: 1.5em;
+    }
+
+      nav a {
+        background: #c00;
+        color: #fff;
+        display: block;
+        font-size: 1.25em;
+        margin: .25em 0;
+        padding: .25em 5%;
+        text-align: center;
+        text-transform: lowercase;
+        -moz-transition: background 250ms ease;
+        -o-transition: background 250ms ease;
+        -webkit-transition: background 250ms ease;
+        transition: background 250ms ease;
+        width: 90%;
+      }
+      
+        nav a:hover {
+          background: #1c1c1c;
+          color: #ccc;
+        }
+
+      nav .secondary {
+        margin-top: 1.5em;
+      }
+
+        nav .secondary a {
+          font-size: 1em;
+        }
+
+    footer .meta p {
+      border-top: 1px dashed #333;
+      padding-top: .5em;
+      margin-bottom: .5em;
+    }
+
+      footer .meta p:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
+
+      footer .meta a:hover {
+        color: #ccc;
+      }
+
+    a.sign-in-with-twitter {
+      background: transparent url('sign-in-with-twitter-sprite.png') no-repeat 0 0;
+      display: block;
+      height: 24px;
+      margin: .35em 0 .75em 0;
+      overflow: hidden;
+      text-indent: -999em;
+      width: 151px;
+    }
+
+      a.sign-in-with-twitter:hover {
+        background-position: 0 -24px;
+      }
+
+        a.sign-in-with-twitter:active {
+          position: relative;
+          top: .1em;
+        }
+
+    #feed {
+      min-height: 3.5em;
+    }
