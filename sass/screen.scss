@@ -1,6 +1,230 @@
 /* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+* In this file you should write your main styles. (or centralize your imports)
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "css3/animation";
+@import "css3/keyframes";
 @import "compass/reset";
+@import "compass";
+
+
+$mainColor: #333;
+$embedFont: "sidewalk";
+$fontsize: "100%/1.5";
+
+@include font-face(
+    "#{$embedFont}",
+    font-files(
+        "#{$embedFont}-webfont.woff", woff,
+        "#{$embedFont}-webfont.ttf", truetype,
+        "#{$embedFont}-webfont.svg#sidewalkRegular", svgm,
+        "#{$embedFont}-webfont.eot?#iefix", embedded-opentype
+    ),
+    "#{$embedFont}-webfont.eot"
+);
+
+@mixin fontfamily($embed : false){
+    @if $embed == false { font-family: Helvetica, Arial, sans-serif; }
+    @else { font-family: "#{$embedFont}", Helvetica, Arial, sans-serif; }
+}
+
+input,button,body{
+    color: $mainColor;
+    font-size: #{$fontsize};
+    @include fontfamily;
+}
+
+a{
+    @include link-colors(#c00, $mainColor);
+    text-decoration: none;
+}
+
+dl{
+    overflow:hidden;
+    dt{ font-style: italic; }
+    dd{ margin-left: 1em; }
+}
+
+p, dl, form{
+    margin-bottom: 1em;
+}
+
+header{
+    margin: 1em 0;
+    h1,h2,h3,nav,p.info{
+        @include fontfamily(true);
+        font-weight: normal;
+    }
+    h1,h2{ text-align: center; }
+    h1{
+        font-size: 2.5em;
+        line-height: normal;
+        a{ @include link-colors(#c00, $mainColor); }
+    }
+    h2{
+        font-size: 1em;
+        .byline-tag { color: #c00; }
+    }
+}
+
+.wrapper{
+    max-width: 64em;
+    margin: 0 auto;
+    padding: 0 1em;
+    img.capa{
+        width:100%;
+        @include border-radius(1em);
+    }
+    article{
+        margin-bottom: 1em;
+        position: relative;
+        h3,p.info{ font-size: 1.5em; }
+        h3{
+            margin-bottom: .25em;
+            a{ @include link-colors(#c00, $mainColor); }
+        }
+        .site h3{ padding-right: 2.5em; }
+        .like{
+            position: absolute;
+            right: 0;
+            top: .9em;
+        }
+        .shots{
+            @include legacy-pie-clearfix;
+            img{
+                float: left;
+                margin-bottom: 1em;
+                margin-right: 3.125%;
+                @include single-box-shadow(rgba(0, 0, 0, .5), 0, 1px, 4px);
+            }
+            .smartphone{
+                max-width: 5em;
+                width: 7.8125%;
+            }
+            .tablet{
+                max-width: 12em;
+                width: 18.75%;
+            }
+            .netbook{
+                max-width: 16em;
+                width: 25%;
+            }
+            .desktop{
+                margin-right: 0;
+                max-width: 25em;
+                width: 39.0625%;
+            }
+            &:hover{
+                img{ @include opacity(.8) }
+            }
+        }
+    }
+    #submit, #about, #leaders, #tag-usage, #error, p#pagination{ margin-bottom: 2em; }
+    p#pagination{
+        strong{ font-weight: normal; }
+        .orderby{ display: block; }
+    }
+}
+
+#leaders{
+    article{
+        dl{
+            dd{
+                a{ @include link-colors(#c00, $mainColor); }
+            }
+        }
+    }
+}
+
+#tag-usage{
+    dl{
+        dd.percentage{
+            background: rgba(0, 0, 0, .05);
+            margin-bottom: 1em;
+            margin-top: .5em;
+            .bar{
+                display: block;
+                .value{
+                    background: #c00;
+                    color: #fff;
+                    display: block;
+                    padding: .25em 0;
+                    text-align: center;
+                    @include animation-basic(tag-bar, 500ms, ease-out);
+                }
+            }
+            
+        }
+    }
+}
+
+@include keyframes(tag-bar, width, 0%, 100%);
+
+.ro{ color: #c00; font-size: 1.5em; }
+
+footer{
+    background: #111;
+    border-top: 1px solid #ccc;
+    @include single-box-shadow(#111, 0, 4em, 3em, 4em);
+    color: #ccc;
+    padding: 3em 0;
+    .wrapper{
+        .p{}
+    }
+    .meta{
+        .p{
+            border-top: 1px dashed #333;
+            padding-top: .5em;
+            margin-bottom: .5em;
+            &:first-child{
+                border-top: none;
+                padding-top: 0;
+            }
+        }
+        a{ @include link-colors(#c00, $mainColor) };
+    }
+}
+
+nav{
+    margin-bottom: 1.5em;
+    a{
+        background: #c00;
+        color: #fff;
+        display: block;
+        font-size: 1.25em;
+        margin: .25em 0;
+        padding: .25em 5%;
+        text-align: center;
+        text-transform: lowercase;
+        width: 90%;
+        @include single-transition(background, 250ms, ease);
+        &:hover{
+            background: #1c1c1c;
+            color: #ccc;
+        }
+    }
+    .secondary{
+        margin-top: 1.5em;
+        a{ font-size: 1em; }
+    }
+}
+
+a.sign-in-with-twitter{
+    background: transparent url('sign-in-with-twitter-sprite.png') no-repeat 0 0;
+    display: block;
+    height: 24px;
+    margin: .35em 0 .75em 0;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 151px;
+    &:hover{
+        background-position: 0 -24px;
+    }
+    &:active{
+        position: relative;
+        top: .1em;        
+    }
+}
+
+#feed{ min-height: 3.5em; }
