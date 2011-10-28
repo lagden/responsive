@@ -7,7 +7,7 @@ While [responsive images using css3](http://nicolasgallagher.com/responsive-imag
 
 `HTML` 
 
-    <img
+    <img class="responsive"
       src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw=="
       data-600="assets/image600.jpg"
       data-800="assets/image800.jpg"
