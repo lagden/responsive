@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width">
     
     <link rel="stylesheet" href="stylesheets/screen.css">
-    <link rel="stylesheet" href="static/device.css">
+    <link rel="stylesheet" href="stylesheets/device.css">
+    
     <link rel="stylesheet" href="static/form.css">
     <link rel="stylesheet" href="static/icon.css">
     
@@ -17,7 +18,7 @@
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function()
         {
-            $('img').responsive();
+            $('img.responsive').responsive();
         });
     </script>
     
@@ -31,13 +32,14 @@
         <header>
             <hgroup>
                 <h1><a href="/">Media Queries</a></h1>
-                <h2>Exemplos de como usar e fazer</h2>
+                <h2>How to use and samples</h2>
             </hgroup>
         </header>
     </div>
     
     <div id="content" class="wrapper">
-        <img class="capa" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw=="
+        
+        <img class="responsive splash" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw=="
              data-400="assets/image400.jpg"
              data-500="assets/image500.jpg"
              data-600="assets/image600.jpg"
@@ -46,48 +48,37 @@
              data-default="assets/image.jpg"
         alt="image">
         
-        <article id="lcs" class="site">
+        <article id="sample" class="site">
             <h3>
-                <a href="/lcs/">Lancaster University</a>
+                <a href="#sample">Sample</a>
             </h3>
             <p class="like icon">
-                <a href="#auth">7</a>
+                <a href="#sample">10</a>
             </p>
         
             <div class="shots">
-                <a href="http://www.lancs.ac.uk/">
-                    <img class="smartphone" src="/static/shots/lcs.smartphone.thumb.png">
+                <a href="#sample">
+                    <img class="smartphone" src="images/local.smartphone.thumb.png">
                 </a>
-                <a href="http://www.lancs.ac.uk/">
-                    <img class="tablet" src="/static/shots/lcs.tablet.thumb.png">
+                <a href="#sample">
+                    <img class="tablet" src="images/local.tablet.thumb.png">
                 </a>
-                <a href="http://www.lancs.ac.uk/">
-                    <img class="netbook" src="/static/shots/lcs.netbook.thumb.png">
+                <a href="#sample">
+                    <img class="netbook" src="images/local.netbook.thumb.png">
                 </a>
-                <a href="http://www.lancs.ac.uk/">
-                    <img class="desktop" src="/static/shots/lcs.desktop.thumb.png">
+                <a href="#sample">
+                    <img class="desktop" src="images/local.desktop.thumb.png">
                 </a>
             </div>
         </article>
-    
-        <p id=pagination>
-            <strong>1</strong>
-            <a href="/2/">2</a>
-            <a href="/3/">3</a>
-            <span class=seperator>&hellip;</span>
-            <a href="/25/">25</a>
-            <a href="/26/">26</a>
-            <a href="/2/">Next &raquo;</a>
-            <a class="orderby" href="/popular/">Order by popularity</a>
-        </p>
     </div>
 
     <footer>
         <div class="wrapper">
             <nav>
-                <a href="/submit/">Submit</a>
-                <a href="/leaderboard/">Leaderboard</a>
-                <a href="/about/">About</a>
+                <a href="http://mediaqueri.es/submit/">Submit</a>
+                <a href="http://mediaqueri.es/leaderboard/">Leaderboard</a>
+                <a href="http://mediaqueri.es/about/">About</a>
                 <div class="secondary">
                     <a href="http://twitter.com/mediaqueries">@mediaqueries</a>
                     <a href="mailto:hello@mediaqueri.es">hello@mediaqueri.es</a>
@@ -97,34 +88,26 @@
             <div class="meta">
                 <p id="tags">
                     Browse by tags:
-                    <a  href="/tag/media-queries/"  style="color: rgba(204, 0, 0, 1.0);">media queries</a>,
-                    <a  href="/tag/flexible-images/"  style="color: rgba(204, 0, 0, 0.7);">flexible images</a>,
-                    <a  href="/tag/fluid-grids/"  style="color: rgba(204, 0, 0, 0.7);">fluid grids</a>,
-                    <a  href="/tag/responsive-web-design/"  style="color: rgba(204, 0, 0, 0.6);">responsive web design</a>,
-                    <a  href="/tag/fixed-grids/"  style="color: rgba(204, 0, 0, 0.5);">fixed grids</a>
+                    <a href="http://mediaqueri.es/tag/media-queries/"  style="color: rgba(204, 0, 0, 1.0);">media queries</a>,
+                    <a href="http://mediaqueri.es/tag/flexible-images/"  style="color: rgba(204, 0, 0, 0.7);">flexible images</a>,
+                    <a href="http://mediaqueri.es/tag/fluid-grids/"  style="color: rgba(204, 0, 0, 0.7);">fluid grids</a>,
+                    <a href="http://mediaqueri.es/tag/responsive-web-design/"  style="color: rgba(204, 0, 0, 0.6);">responsive web design</a>,
+                    <a href="http://mediaqueri.es/tag/fixed-grids/"  style="color: rgba(204, 0, 0, 0.5);">fixed grids</a>
                     and
-                    <a  href="/tag/mobile-first/"  style="color: rgba(204, 0, 0, 0.5);">mobile first</a>.
-                    <br>
+                    <a href="http://mediaqueri.es/tag/mobile-first/"  style="color: rgba(204, 0, 0, 0.5);">mobile first</a>.<br>
                     View <a href="/tag/">tag frequency</a>.
                 </p>
                 
                 <p id="auth">
-                    A Twitter account is needed to submit sites
-                    and vote for the sites you like.
-                    <a href="/login/" class="sign-in-with-twitter">Sign in with Twitter</a>
+                    A Twitter account is needed to submit sites and vote for the sites you like.
+                    <a href="http://mediaqueri.es/login/" class="sign-in-with-twitter">Sign in with Twitter</a>
                 </p>
-
-                <p id="feed" class="icon">
-                    <a href="/.atom">
-                        Subscribe to a feed of the latest highlighted sites using
-                        media queries.
-                    </a>
-                </p>
-
+                
+                <p id="feed" class="icon"><a href="http://mediaqueri.es/.atom">Subscribe to a feed of the latest highlighted sites using media queries.</a></p>
+                
                 <p id="copy">
-                    Curated by
-                    <a href="http://uggedal.com">Eivind Uggedal</a>
-                    (<a href="http://twitter.com/uggedal">@uggedal</a>).
+                    Curated by <a href="http://uggedal.com">Eivind Uggedal</a> (<a href="http://twitter.com/uggedal">@uggedal</a>).<br>
+                    Reused by <a href="http://lagden.github.com">Thiago Lagden</a> (<a href="http://twitter.com/thiagolagden">@thiagolagden</a>).
                 </p>
             </div>
         </div>

@@ -1,0 +1,91 @@
+@import "compass";
+
+@mixin icon-after-before{
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 2em;
+}
+
+.icon{
+    position: relative;
+    a{
+        color: #333;
+        display: block;
+        &:hover{}
+        &:before,
+        &:after{
+            @include icon-after-before;
+            margin: -.5em 0 0;
+        }
+        &:hover:before{
+            background: #333;
+        }
+    }
+    &:before,
+    &:after{
+        @include icon-after-before;
+    }
+}
+
+#feed{
+    a{
+        color: #ccc;
+        padding-left: 4em;
+        &:before{
+            background: #c00;
+            height: .9375em;
+            left: 0;
+            margin-top: 0.425em;
+            width: .9375em;
+            @include border-radius(.9375em);
+        }
+        &:hover:before{ background: #ccc; }
+        &:after{
+            @include border-radius(0 7.03125em 0 0);
+            border-color: #c00;
+            border-style: double;
+            border-width: 1.40625em 1.40625em 0 0;
+            height: 1.5em;
+            left: 0;
+            top: 1em;
+            width: 1.5em;
+        }
+        &:hover:after{ border-color: #ccc; }
+    }
+}
+
+.like{
+    font-size: .75em;
+    &:before,
+    &:after{ top: .75em; }
+    a{
+        color: #666;
+        cursor: pointer;
+        padding-left: 3em;
+        &:before,
+        &:after{ top: .75em; }
+        &:hover{ color: #333; }
+        &:before,
+        &:after{
+            @include border-radius(.75em 0 0 .75em);
+            @include transform(rotate(45deg));
+            background: #ddd;
+            height: 1.125em;
+            margin-top: -.75em;
+            width: 1.75em;
+        }
+        &:after{
+            @include border-radius(.75em 0 0 .75em);
+            @include transform(rotate(135deg));
+            left: .5em;
+        }
+        &:hover:before,
+        &:hover:after{ background: #c00; }
+    }
+    a.hasvoted{
+        cursor: default;
+        &:before,
+        &:after{ background: #c00; }   
+    }
+}

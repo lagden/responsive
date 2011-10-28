@@ -1,0 +1,140 @@
+/* line 10, ../sass/icon.scss */
+.icon {
+  position: relative;
+}
+/* line 12, ../sass/icon.scss */
+.icon a {
+  color: #333;
+  display: block;
+}
+/* line 17, ../sass/icon.scss */
+.icon a:before, .icon a:after {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 2em;
+  margin: -0.5em 0 0;
+}
+/* line 21, ../sass/icon.scss */
+.icon a:hover:before {
+  background: #333;
+}
+/* line 26, ../sass/icon.scss */
+.icon:before, .icon:after {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 2em;
+}
+
+/* line 32, ../sass/icon.scss */
+#feed a {
+  color: #ccc;
+  padding-left: 4em;
+}
+/* line 35, ../sass/icon.scss */
+#feed a:before {
+  background: #c00;
+  height: .9375em;
+  left: 0;
+  margin-top: 0.425em;
+  width: .9375em;
+  -moz-border-radius: 0.938em;
+  -webkit-border-radius: 0.938em;
+  -o-border-radius: 0.938em;
+  -ms-border-radius: 0.938em;
+  -khtml-border-radius: 0.938em;
+  border-radius: 0.938em;
+}
+/* line 43, ../sass/icon.scss */
+#feed a:hover:before {
+  background: #ccc;
+}
+/* line 44, ../sass/icon.scss */
+#feed a:after {
+  -moz-border-radius: 0 7.031em 0 0;
+  -webkit-border-radius: 0 7.031em 0 0;
+  -o-border-radius: 0 7.031em 0 0;
+  -ms-border-radius: 0 7.031em 0 0;
+  -khtml-border-radius: 0 7.031em 0 0;
+  border-radius: 0 7.031em 0 0;
+  border-color: #c00;
+  border-style: double;
+  border-width: 1.40625em 1.40625em 0 0;
+  height: 1.5em;
+  left: 0;
+  top: 1em;
+  width: 1.5em;
+}
+/* line 54, ../sass/icon.scss */
+#feed a:hover:after {
+  border-color: #ccc;
+}
+
+/* line 58, ../sass/icon.scss */
+.like {
+  font-size: .75em;
+}
+/* line 61, ../sass/icon.scss */
+.like:before, .like:after {
+  top: .75em;
+}
+/* line 62, ../sass/icon.scss */
+.like a {
+  color: #666;
+  cursor: pointer;
+  padding-left: 3em;
+}
+/* line 67, ../sass/icon.scss */
+.like a:before, .like a:after {
+  top: .75em;
+}
+/* line 68, ../sass/icon.scss */
+.like a:hover {
+  color: #333;
+}
+/* line 70, ../sass/icon.scss */
+.like a:before, .like a:after {
+  -moz-border-radius: 0.75em 0 0 0.75em;
+  -webkit-border-radius: 0.75em 0 0 0.75em;
+  -o-border-radius: 0.75em 0 0 0.75em;
+  -ms-border-radius: 0.75em 0 0 0.75em;
+  -khtml-border-radius: 0.75em 0 0 0.75em;
+  border-radius: 0.75em 0 0 0.75em;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #ddd;
+  height: 1.125em;
+  margin-top: -0.75em;
+  width: 1.75em;
+}
+/* line 78, ../sass/icon.scss */
+.like a:after {
+  -moz-border-radius: 0.75em 0 0 0.75em;
+  -webkit-border-radius: 0.75em 0 0 0.75em;
+  -o-border-radius: 0.75em 0 0 0.75em;
+  -ms-border-radius: 0.75em 0 0 0.75em;
+  -khtml-border-radius: 0.75em 0 0 0.75em;
+  border-radius: 0.75em 0 0 0.75em;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  left: .5em;
+}
+/* line 84, ../sass/icon.scss */
+.like a:hover:before, .like a:hover:after {
+  background: #c00;
+}
+/* line 86, ../sass/icon.scss */
+.like a.hasvoted {
+  cursor: default;
+}
+/* line 89, ../sass/icon.scss */
+.like a.hasvoted:before, .like a.hasvoted:after {
+  background: #c00;
+}

@@ -1,0 +1,11 @@
+=keyframes-prefix($prefix: "", $name: false, $property: false, $from: false, $to: false)
+  @#{$prefix}keyframes #{$name}
+    from
+      #{$property}: #{$from}
+    to
+      #{$property}: #{$to}
+
+=keyframes($name, $property, $from, $to)
+  +keyframes-prefix("-webkit-", #{$name}, #{$property}, #{$from}, #{$to})
+  +keyframes-prefix("-moz-", #{$name}, #{$property}, #{$from}, #{$to})
+  +keyframes-prefix("", #{$name}, #{$property}, #{$from}, #{$to})

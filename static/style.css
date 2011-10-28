@@ -1,16 +1,7 @@
-
-@font-face{ 
-  font-family: "OFL Sorts Mill Goudy";
-  font-style: normal;
-  font-weight: normal;
-  src: url('oflgoudystmtt-webfont.eot');
-}
-
 @font-face {
-  font-family: "OFL Sorts Mill Goudy";
-  font-style: normal;
-  font-weight: normal;
-  src: url(http://:/) format("No-IE-404"), url('oflgoudystmtt-webfont.woff') format('woff'), url('oflgoudystmtt-webfont.ttf') format('truetype'), url('oflgoudystmtt-webfont.svg#webfontHB4987y4') format('svg');
+  font-family: "sidewalk";
+  src: url('fonts/sidewalk-webfont.eot');
+  src: url('fonts/sidewalk-webfont.eot?iefix') format('eot'), url('fonts/sidewalk-webfont.woff') format('woff'), url('fonts/sidewalk-webfont.ttf') format('truetype'), url('fonts/sidewalk-webfont.svg#sidewalkRegular') format('svgm'), url('fonts/sidewalk-webfont.eot?#iefix') format('embedded-opentype');
 }
 
 
@@ -59,7 +50,7 @@ header {
   h3,
   nav,
   p.info {
-    font-family: "OFL Sorts Mill Goudy",
+    font-family: "sidewalk",
                  "Palatino",
                  "Georgia",
                  serif;

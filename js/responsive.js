@@ -4,7 +4,8 @@
         {
             var opts, _this, _wins, _width;
             var defaults = {
-                medias: {"400":480,"500":528,"600":640,"700":768,"800":896}
+                medias: {"400":480,"500":528,"600":640,"700":768,"800":896},
+                datadefault: "default"
             };
             
             opts = $.extend(defaults, options);
@@ -22,7 +23,7 @@
         swapImage: function(opts,_this,_width)
         {
             var media = _this.getMedia(opts,_width);
-            media = (media) ? media : "default";
+            media = (media) ? media : opts.datadefault;
             if(media)
             {
                 _this.each(function(i,el)
@@ -31,8 +32,7 @@
                     var data = c.data(media);
                     if(data != undefined)
                     {
-                        c.attr('src',data)
-                        console.log(data,media);
+                        c.attr('src',data);
                     }
                 });
             }

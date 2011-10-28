@@ -1,0 +1,86 @@
+// 30em = 480px
+@media screen and (min-width: 30em){
+    h1{ font-size: 3.25em; }
+    h2{ font-size: 1.25em; }
+    h3{ font-size: 1em; }
+    // do not work yet, so use responsive.js
+    img[data-src-400]{ content: attr(data-src-400, url); }
+}
+
+// 33em = 528px
+@media screen and (min-width: 33em){
+    input{ width: 30em; }
+    // do not work yet, so use responsive.js
+    img[data-src-500]{ content: attr(data-src-500, url); }
+}
+
+// 40em = 640px
+@media screen and (min-width: 40em){
+    footer{
+        .wrapper{ overflow: auto; }
+        .meta{
+            float: left;
+            width: 67.1875%;
+        }
+    }
+    nav{
+        margin-right: 3.125%;
+        width: 29.6875%;
+        float: left;
+        a{
+            background: #1c1c1c;
+            color: #ccc;
+            font-size: 1.5em;
+            margin: 0 0 .5em 0;
+            text-align: left;
+            text-transform: none;
+            &:hover{
+                background: #c00;
+                color: #fff;                
+            }
+        }
+        .secondary{
+            a{ font-size: 1.25em; }
+        }
+    }
+    // do not work yet, so use responsive.js
+    img[data-src-600]{ content: attr(data-src-600, url); }
+}
+
+// 48em = 768px
+@media screen and (min-width: 48em){
+    .wrapper{ padding: 0 1.5em; }
+    h1{ font-size: 6em; }
+    h2{ font-size: 1.5em; }
+    article{
+        h3,p.info{ font-size: 2em; }
+        .like{ font-size: 1em; }
+    }
+    // do not work yet, so use responsive.js
+    img[data-src-700]{ content: attr(data-src-700, url); }
+}
+
+// 56em = 896px
+@media screen and (min-width: 56em){
+    footer{
+        .meta{
+            position: relative;
+            p{
+                margin-left: 41.8605%;
+                width: 58.1395%;
+                &:nth-child(2){
+                    border-top: none;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+    
+    #tags{
+        position: absolute;
+        margin-left: 0;
+        width: 37.2105%;
+    }
+    // do not work yet, so use responsive.js
+    img[data-src-800]{ content: attr(data-src-800, url); }
+}
