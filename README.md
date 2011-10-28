@@ -57,5 +57,5 @@ Author
 
 **Thiago Lagden**
 
-http://twitter.com/thiagolagden
-http://github.com/lagden
+[Twitter](http://twitter.com/thiagolagden)  
+[Github](http://github.com/lagden)
