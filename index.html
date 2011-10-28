@@ -3,22 +3,19 @@
 <html>
 <head>
     <title>Media Queries</title>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     
     <link rel="stylesheet" href="stylesheets/screen.css">
     <link rel="stylesheet" href="stylesheets/device.css">
-    
-    <link rel="stylesheet" href="static/form.css">
-    <link rel="stylesheet" href="static/icon.css">
+    <link rel="stylesheet" href="stylesheets/icon.css">
     
     <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/responsive.js"></script>
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function()
         {
-            $('img.responsive').responsive();
+            $('img.responsive').responsive({debug:true});
         });
     </script>
     

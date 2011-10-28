@@ -5,7 +5,8 @@
             var opts, _this, _wins, _width;
             var defaults = {
                 medias: {"400":480,"500":528,"600":640,"700":768,"800":896},
-                datadefault: "default"
+                dataDefault: "default",
+                debug: false
             };
             
             opts = $.extend(defaults, options);
@@ -23,7 +24,7 @@
         swapImage: function(opts,_this,_width)
         {
             var media = _this.getMedia(opts,_width);
-            media = (media) ? media : opts.datadefault;
+            media = (media) ? media : opts.dataDefault;
             if(media)
             {
                 _this.each(function(i,el)
@@ -32,6 +33,7 @@
                     var data = c.data(media);
                     if(data != undefined)
                     {
+                        if(opts.debug) _this.trace(data);
                         c.attr('src',data);
                     }
                 });
@@ -44,6 +46,13 @@
                 if(opts.medias[k] >= _width) return k;
             }
             return false;
+        },
+        trace: function()
+        {
+            if(typeof(console)!=='undefined'&&console!=null)
+            {
+                console.log(arguments);
+            }
         }
     });
 })( jQuery );
