@@ -3,7 +3,7 @@ Responsive.js
 
 While [responsive images using css3](http://nicolasgallagher.com/responsive-images-using-css3/) is not implemented, I created a jquery plugin to simulate the same effect.
 
-Responsive.js usage:
+### Responsive.js usage:
 
 `HTML` 
 
@@ -29,7 +29,7 @@ Responsive.js usage:
             });
         </script>
 
-CSS3 usage ( near future - no more Responsive.js ):
+### CSS3 usage ( near future - no more Responsive.js ):
 
 `HTML` 
 
