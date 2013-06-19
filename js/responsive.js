@@ -1,3 +1,13 @@
+/*
+* Responsive.js 1.0
+* A jQuery plugin for responsive images
+*
+* Copyrigh 2011, Thiago Lagden http://lagden.art.br
+* Released under the WTFPL license 
+* http://sam.zoy.org/wtfpl/
+*
+* Date: 30 October 2011
+*/
 (function( $ ){
     $.extend($.fn,{        
         responsive: function(options)

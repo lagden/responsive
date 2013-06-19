@@ -1,7 +1,7 @@
 @media screen and (min-width: 30em) {
   /* line 3, ../sass/device.scss */
   h1 {
-    font-size: 3.25em;
+    font-size: 10.25em;
   }
 
   /* line 4, ../sass/device.scss */
@@ -102,29 +102,34 @@
   }
 }
 @media screen and (min-width: 56em) {
-  /* line 66, ../sass/device.scss */
+  /* line 65, ../sass/device.scss */
+  h1 {
+    font-size: 1.25em;
+  }
+
+  /* line 67, ../sass/device.scss */
   footer .meta {
     position: relative;
   }
-  /* line 68, ../sass/device.scss */
+  /* line 69, ../sass/device.scss */
   footer .meta p {
     margin-left: 41.8605%;
     width: 58.1395%;
   }
-  /* line 71, ../sass/device.scss */
+  /* line 72, ../sass/device.scss */
   footer .meta p:nth-child(2) {
     border-top: none;
     padding-top: 0;
   }
 
-  /* line 79, ../sass/device.scss */
+  /* line 80, ../sass/device.scss */
   #tags {
     position: absolute;
     margin-left: 0;
     width: 37.2105%;
   }
 
-  /* line 85, ../sass/device.scss */
+  /* line 86, ../sass/device.scss */
   img[data-src-800] {
     content: attr(data-src-800, url);
   }

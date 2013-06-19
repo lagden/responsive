@@ -13,7 +13,7 @@
   left: 0;
   position: absolute;
   top: 2em;
-  margin: -0.5em 0 0;
+  margin: -.5em 0 0;
 }
 /* line 21, ../sass/icon.scss */
 .icon a:hover:before {
@@ -39,12 +39,11 @@
   left: 0;
   margin-top: 0.425em;
   width: .9375em;
-  -moz-border-radius: 0.938em;
-  -webkit-border-radius: 0.938em;
-  -o-border-radius: 0.938em;
-  -ms-border-radius: 0.938em;
-  -khtml-border-radius: 0.938em;
-  border-radius: 0.938em;
+  -webkit-border-radius: 0.9375em;
+  -moz-border-radius: 0.9375em;
+  -ms-border-radius: 0.9375em;
+  -o-border-radius: 0.9375em;
+  border-radius: 0.9375em;
 }
 /* line 43, ../sass/icon.scss */
 #feed a:hover:before {
@@ -52,12 +51,11 @@
 }
 /* line 44, ../sass/icon.scss */
 #feed a:after {
-  -moz-border-radius: 0 7.031em 0 0;
-  -webkit-border-radius: 0 7.031em 0 0;
-  -o-border-radius: 0 7.031em 0 0;
-  -ms-border-radius: 0 7.031em 0 0;
-  -khtml-border-radius: 0 7.031em 0 0;
-  border-radius: 0 7.031em 0 0;
+  -webkit-border-radius: 0 7.03125em 0 0;
+  -moz-border-radius: 0 7.03125em 0 0;
+  -ms-border-radius: 0 7.03125em 0 0;
+  -o-border-radius: 0 7.03125em 0 0;
+  border-radius: 0 7.03125em 0 0;
   border-color: #c00;
   border-style: double;
   border-width: 1.40625em 1.40625em 0 0;
@@ -95,34 +93,32 @@
 }
 /* line 70, ../sass/icon.scss */
 .like a:before, .like a:after {
-  -moz-border-radius: 0.75em 0 0 0.75em;
   -webkit-border-radius: 0.75em 0 0 0.75em;
-  -o-border-radius: 0.75em 0 0 0.75em;
+  -moz-border-radius: 0.75em 0 0 0.75em;
   -ms-border-radius: 0.75em 0 0 0.75em;
-  -khtml-border-radius: 0.75em 0 0 0.75em;
+  -o-border-radius: 0.75em 0 0 0.75em;
   border-radius: 0.75em 0 0 0.75em;
-  -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
   background: #ddd;
   height: 1.125em;
-  margin-top: -0.75em;
+  margin-top: -.75em;
   width: 1.75em;
 }
 /* line 78, ../sass/icon.scss */
 .like a:after {
-  -moz-border-radius: 0.75em 0 0 0.75em;
   -webkit-border-radius: 0.75em 0 0 0.75em;
-  -o-border-radius: 0.75em 0 0 0.75em;
+  -moz-border-radius: 0.75em 0 0 0.75em;
   -ms-border-radius: 0.75em 0 0 0.75em;
-  -khtml-border-radius: 0.75em 0 0 0.75em;
+  -o-border-radius: 0.75em 0 0 0.75em;
   border-radius: 0.75em 0 0 0.75em;
-  -moz-transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
   transform: rotate(135deg);
   left: .5em;
 }
