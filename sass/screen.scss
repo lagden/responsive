@@ -5,16 +5,19 @@ $mainColor: #333;
 $embedFont: "sidewalk";
 $fontsize: "100%/1.5";
 
-@include font-face(
-    "#{$embedFont}",
-    font-files(
-        "#{$embedFont}-webfont.woff", woff,
-        "#{$embedFont}-webfont.ttf", truetype,
-        "#{$embedFont}-webfont.svg#sidewalkRegular", svgm,
-        "#{$embedFont}-webfont.eot?#iefix", embedded-opentype
-    ),
-    "#{$embedFont}-webfont.eot"
-);
+@mixin fontface($embedFont){
+    @include font-face(
+        "#{$embedFont}",
+        font-files(
+            "#{$embedFont}-webfont.woff", woff,
+            "#{$embedFont}-webfont.ttf", truetype,
+            "#{$embedFont}-webfont.svg##{$embedFont}", svg
+            ),
+        "#{$embedFont}-webfont.eot"
+    );
+}
+
+@include fontface($embedFont);
 
 @mixin fontfamily($embed : false){
     @if $embed == false { font-family: Helvetica, Arial, sans-serif; }

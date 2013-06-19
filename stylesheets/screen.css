@@ -1,59 +1,333 @@
-/*
-Syntax error: Could not determine font type for "svgm"
-        on line 15 of /Library/WebServer/Documents/xxx/MediaQueries/sass/screen.scss, in `font-face'
-        from line 17 of /Library/WebServer/Documents/xxx/MediaQueries/sass/screen.scss
+/* line 17, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/Library/WebServer/Documents/xxx/MediaQueries/sass/screen.scss:15:in `font-face'
-/Library/WebServer/Documents/xxx/MediaQueries/sass/screen.scss:17
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/sass_extensions/functions/font_files.rb:35:in `block in font_files'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/sass_extensions/functions/font_files.rb:17:in `each'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/sass_extensions/functions/font_files.rb:17:in `each_with_index'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/sass_extensions/functions/font_files.rb:17:in `font_files'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/script/funcall.rb:106:in `_perform'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/script/node.rb:40:in `perform'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:259:in `block in visit_mixin'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:259:in `map'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:259:in `visit_mixin'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/tree/root_node.rb:20:in `render'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/commands/update_project.rb:45:in `perform'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/bin/compass:23:in `load'
-/Users/lagden/.rvm/gems/ruby-1.9.3-p327/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Could not determine font type for \"svgm\"\A         on line 15 of /Library/WebServer/Documents/xxx/MediaQueries/sass/screen.scss, in `font-face'\A         from line 17 of /Library/WebServer/Documents/xxx/MediaQueries/sass/screen.scss"; }
+/* line 22, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "sidewalk";
+  src: url('fonts/sidewalk-webfont.eot');
+  src: url('fonts/sidewalk-webfont.eot?#iefix') format('eot'), url('fonts/sidewalk-webfont.woff') format('woff'), url('fonts/sidewalk-webfont.ttf') format('truetype'), url('fonts/sidewalk-webfont.svg#sidewalk') format('svg');
+}
+
+/* line 27, ../sass/screen.scss */
+input, button, body {
+  color: #333333;
+  font-size: 100%/1.5;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 33, ../sass/screen.scss */
+a {
+  color: #cc0000;
+  text-decoration: none;
+}
+/* line 24, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #333333;
+}
+
+/* line 38, ../sass/screen.scss */
+dl {
+  overflow: hidden;
+}
+/* line 40, ../sass/screen.scss */
+dl dt {
+  font-style: italic;
+}
+/* line 41, ../sass/screen.scss */
+dl dd {
+  margin-left: 1em;
+}
+
+/* line 44, ../sass/screen.scss */
+p, dl, form {
+  margin-bottom: 1em;
+}
+
+/* line 48, ../sass/screen.scss */
+header {
+  margin: 1em 0;
+}
+/* line 50, ../sass/screen.scss */
+header h1, header h2, header h3, header nav, header p.info {
+  font-family: "sidewalk", Helvetica, Arial, sans-serif;
+}
+/* line 53, ../sass/screen.scss */
+header h1, header h2 {
+  text-align: center;
+}
+/* line 54, ../sass/screen.scss */
+header h1 {
+  font-size: 2.5em;
+  line-height: normal;
+}
+/* line 57, ../sass/screen.scss */
+header h1 a {
+  color: #cc0000;
+}
+/* line 24, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header h1 a:hover {
+  color: #333333;
+}
+/* line 59, ../sass/screen.scss */
+header h2 {
+  font-size: 1em;
+}
+/* line 61, ../sass/screen.scss */
+header h2 .byline-tag {
+  color: #c00;
+}
+
+/* line 65, ../sass/screen.scss */
+.wrapper {
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+/* line 69, ../sass/screen.scss */
+.wrapper img.splash {
+  width: 100%;
+  margin: 0 0 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+}
+/* line 74, ../sass/screen.scss */
+.wrapper article {
+  margin-bottom: 2em;
+  position: relative;
+}
+/* line 77, ../sass/screen.scss */
+.wrapper article h3, .wrapper article p.info {
+  font-size: 1.5em;
+}
+/* line 78, ../sass/screen.scss */
+.wrapper article h3 {
+  margin-bottom: .7em;
+}
+/* line 80, ../sass/screen.scss */
+.wrapper article h3 a {
+  color: #cc0000;
+}
+/* line 24, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.wrapper article h3 a:hover {
+  color: #333333;
+}
+/* line 82, ../sass/screen.scss */
+.wrapper article .like {
+  position: absolute;
+  right: 0;
+  top: .25em;
+}
+/* line 87, ../sass/screen.scss */
+.wrapper article .shots {
+  *zoom: 1;
+}
+/* line 22, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.wrapper article .shots:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 89, ../sass/screen.scss */
+.wrapper article .shots img {
+  float: left;
+  margin-bottom: 1em;
+  margin-right: 3.125%;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+/* line 95, ../sass/screen.scss */
+.wrapper article .shots .smartphone {
+  max-width: 5em;
+  width: 7.8125%;
+}
+/* line 99, ../sass/screen.scss */
+.wrapper article .shots .tablet {
+  max-width: 12em;
+  width: 18.75%;
+}
+/* line 103, ../sass/screen.scss */
+.wrapper article .shots .netbook {
+  max-width: 16em;
+  width: 25%;
+}
+/* line 107, ../sass/screen.scss */
+.wrapper article .shots .desktop {
+  margin-right: 0;
+  max-width: 25em;
+  width: 39.0625%;
+}
+/* line 113, ../sass/screen.scss */
+.wrapper article .shots:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 118, ../sass/screen.scss */
+.wrapper article.site > h3 {
+  padding-right: 2.5em;
+  font-weight: bold;
+}
+/* line 123, ../sass/screen.scss */
+.wrapper #submit, .wrapper #about, .wrapper #leaders, .wrapper #tag-usage, .wrapper #error, .wrapper p#pagination {
+  margin-bottom: 2em;
+}
+
+/* line 126, ../sass/screen.scss */
+footer {
+  background: #111;
+  border-top: 1px solid #ccc;
+  -webkit-box-shadow: 0 4em 3em 3.5em #111111;
+  -moz-box-shadow: 0 4em 3em 3.5em #111111;
+  box-shadow: 0 4em 3em 3.5em #111111;
+  color: #ccc;
+  padding: 3em 0;
+}
+/* line 133, ../sass/screen.scss */
+footer .wrapper p {
+  line-height: normal;
+}
+/* line 138, ../sass/screen.scss */
+footer .meta p {
+  border-top: 1px dashed #333;
+  padding-top: .5em;
+  margin-bottom: .5em;
+}
+/* line 142, ../sass/screen.scss */
+footer .meta p:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+/* line 147, ../sass/screen.scss */
+footer .meta a {
+  color: #cc0000;
+}
+/* line 24, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+footer .meta a:hover {
+  color: #333333;
+}
+
+/* line 151, ../sass/screen.scss */
+nav {
+  margin-bottom: 1.5em;
+}
+/* line 153, ../sass/screen.scss */
+nav a {
+  background: #c00;
+  color: #fff;
+  display: block;
+  font-size: 1.25em;
+  margin: .25em 0;
+  padding: .25em 5%;
+  text-align: center;
+  text-transform: lowercase;
+  width: 90%;
+  -webkit-transition: background 250ms ease;
+  -moz-transition: background 250ms ease;
+  -o-transition: background 250ms ease;
+  transition: background 250ms ease;
+}
+/* line 164, ../sass/screen.scss */
+nav a:hover {
+  background: #1c1c1c;
+  color: #ccc;
+}
+/* line 169, ../sass/screen.scss */
+nav .secondary {
+  margin-top: 1.5em;
+}
+/* line 171, ../sass/screen.scss */
+nav .secondary a {
+  font-size: 1em;
+}
+
+/* line 175, ../sass/screen.scss */
+a.sign-in-with-twitter {
+  background: transparent url("assets/sign-in-with-twitter-sprite.png") no-repeat 0 0;
+  display: block;
+  height: 24px;
+  margin: .35em 0 .75em 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 151px;
+}
+/* line 183, ../sass/screen.scss */
+a.sign-in-with-twitter:hover {
+  background-position: 0 -24px;
+}
+/* line 186, ../sass/screen.scss */
+a.sign-in-with-twitter:active {
+  position: relative;
+  top: .1em;
+}
+
+/* line 192, ../sass/screen.scss */
+#feed {
+  min-height: 3.5em;
+}
